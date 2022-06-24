@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <ul class="navMenu  list">
+        <li class="navMenu__item">
+          <p class="navMenu__itemLabel">Nav Item</p>
+          <ul class="navMenu__itemList list">
+            <li class="navMenu__itemListLink">Submenu Item 1</li>
+            <li class="navMenu__itemListLink">Submenu Item 2</li>
+            <li class="navMenu__itemListLink">Submenu Item 3</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+
+<style>
+  html {
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 5rem;
+    background: rgb(1, 1, 113)
+  }
+
+  .navMenu {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 100%;
+  }
+
+  .navMenu__item {
+    display: flex;
+    height: 100%;
+    width: 15rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .navMenu__itemLabel {
+    width: 100%;
+    margin: auto;
+    color: white;
+  }
+
+  .navMenu__item:hover {
+    cursor: pointer;
+  }
+
+  .navMenu__item:hover .navMenu__itemList {
+    display: block;
+  }
+
+  .navMenu__itemList {
+    position: absolute;
+    top: 5rem;
+    margin-top: -5rem;
+    display: none;
+    border: 1px solid grey;
+    border-top: none;
+  }
+
+  .navMenu__itemListLink {
+    padding: 1rem;
+    width: auto;
+  }
+
+  .navMenu__itemListLink:hover {
+    padding: 1rem;
+    width: auto;
+    background: rgb(77, 20, 130);
+    color: white;
+  }
+
+  .list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</html>
